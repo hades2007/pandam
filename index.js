@@ -6,10 +6,10 @@ const db = require('quick.db');
 const { TOKEN, PREFIX, AVATARURL, BOTNAME, } = require(`./config.json`);
 const figlet = require("figlet");
 const client = new Client({ disableMentions: `` , partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
-client.login("");
+client.login("ODY1OTU2NDEwNjc0OTA1MTE4.YPLiwA.Ls0QppIWJOJy2_VofEk-iJogKYI");
 client.commands = new Collection();
 client.setMaxListeners(0);
-client.prefix = PREFIX;
+client.prefix = PREFIX;">"
 client.queue = new Map();
 const cooldowns = new Collection();
 const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
@@ -17,7 +17,7 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
 //this fires when the BOT STARTS DO NOT TOUCH
 
 client.on("message", message => {
-  if (message.content.startsWith(PREFIX + "boy")) {
+  if (message.content.startsWith(PREFIX + ">boy")) {
     let man = [
       "https://media.discordapp.net/attachments/786897044483604490/803870769313480714/Enes_Acar_GIF_70.gif",
       "https://media.discordapp.net/attachments/786897044483604490/803870793716858880/a_57a7f6c875e3a329b170edf177392911.gif",
@@ -53,7 +53,7 @@ client.on("message", message => {
 
 
 client.on("message", message => {
-  if (message.content.startsWith(PREFIX + "girl")) {
+  if (message.content.startsWith(PREFIX + ">girl")) {
     let girl = [
       "https://media.discordapp.net/attachments/786897045436366849/804968189892755456/image2-1.gif",
       "https://media.discordapp.net/attachments/786897045436366849/804968223577604126/gif472.gif",
@@ -85,7 +85,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(PREFIX + "couple")) {
+  if (message.content.startsWith(PREFIX + ">couple")) {
     let loves = [
       "https://media.discordapp.net/attachments/608711480346542102/782233713538498600/hit_gif_5.gif",
       "https://media.discordapp.net/attachments/608711480346542102/782286421020508170/image0_1.gif",
@@ -122,7 +122,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(PREFIX + "sad")) {
+  if (message.content.startsWith(PREFIX + ">sad")) {
     let sads = [
       "https://media.discordapp.net/attachments/786897045952790550/798719676795715614/Zeyrox_43.gif",
       "https://media.discordapp.net/attachments/786897045952790550/799435191323852820/luisa1-1.gif",
@@ -154,7 +154,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(PREFIX + "anime")) {
+  if (message.content.startsWith(PREFIX + ">anime")) {
     let man = [
       "https://media.discordapp.net/attachments/608711485849337856/855998757451989002/image0-2.gif",
       "https://media.discordapp.net/attachments/608711485849337856/856002084461084682/image0-4.gif",
@@ -191,7 +191,7 @@ client.on("message", message => {
 
 
 client.on("message", message => {
-  if (message.content.startsWith(PREFIX + "cartoon")) {
+  if (message.content.startsWith(PREFIX + ">cartoon")) {
     let girl = [
       "https://media.discordapp.net/attachments/755169627872428134/855635705242058752/g0yPLFTYpr283dUJBs.gif",
       "https://media.discordapp.net/attachments/755169627872428134/855792117719498752/video0.gif",
@@ -230,7 +230,7 @@ client.on('message',message => {
 
  
 
-if(message.content.startsWith(PREFIX+ 'ban')) { 
+if(message.content.startsWith(PREFIX+ '>ban')) { 
 
 let args = message.content.split(" ").slice(1) 
 
@@ -327,7 +327,7 @@ client.on("ready", () => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(PREFIX + "neon")) {
+  if (message.content.startsWith(PREFIX + ">neon")) {
     let girl = [
       "https://media.discordapp.net/attachments/755890505681731714/856207944953233439/a_08ca790f778a7ee65184020eb2c85124.gif",
       "https://media.discordapp.net/attachments/755890505681731714/856212748844007454/image4.gif",
@@ -394,7 +394,7 @@ message.channel.send(embed)
         }})
 
 client.on('message',  (message) => {
-        if(message.content.startsWith(PREFIX + "slap")) {
+        if(message.content.startsWith(PREFIX + ">slap")) {
   let user = message.mentions.users.first();
   if (!user) return message.reply('mention someone to Slap')
   let slaps = [
@@ -417,7 +417,7 @@ message.channel.send(embed)
         }})
 
 client.on('message',  (message) => {
-        if(message.content.startsWith(PREFIX + "kiss")) {
+        if(message.content.startsWith(PREFIX + ">kiss")) {
   let user = message.mentions.users.first();
   if (!user) return message.reply('mention someone to Kiss')
   var kiss = [
@@ -643,7 +643,7 @@ let bawan= new Discord.MessageEmbed()
 message.channel.send(bawan)
 }})
 
-let Prefix = "+"; 
+let Prefix = ">"; 
 
 client.on("message", async message => {
 let prefix2 = await db.fetch(`prefix_${message.guild.id}`);
@@ -871,9 +871,9 @@ client.on(`message`, async (message) => {
     .setTimestamp()
     .setDescription(`
 
-[{Support}](https://discord.gg/progresshome)
+[{)
 
-[{Invite}](https://discord.com/api/oauth2/authorize?client_id=807350534901071932&permissions=8&scope=bot)
+[{)
 
 **{Developers Bot}** :
 Dev/<@701546840063082601>
@@ -885,7 +885,7 @@ Online
 19/6/2021
 
 **{Prefix Bot}** :
-$
+>
 
 `)
 
