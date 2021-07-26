@@ -6,7 +6,7 @@ const db = require('quick.db');
 const { TOKEN, PREFIX, AVATARURL, BOTNAME, } = require(`./config.json`);
 const figlet = require("figlet");
 const client = new Client({ disableMentions: `` , partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
-client.login("ODY1OTU2NDEwNjc0OTA1MTE4.YPLiwA.Ls0QppIWJOJy2_VofEk-iJogKYI");
+client.login("ODY1OTU2NDEwNjc0OTA1MTE4.YPLiwA.WutDpRSFN9NBjHqrJq8eVP_aqAU");
 client.commands = new Collection();
 client.setMaxListeners(0);
 client.prefix = PREFIX;">"
@@ -872,8 +872,7 @@ client.on(`message`, async (message) => {
     .setDescription(`
 
 [{https://discord.gg/EU8dXxWynX)
-
-[{ODY1OTU2NDEwNjc0OTA1MTE4.YPLiwA.og5FJwoxpspYhOzVf8Zj-U3TpsY)
+[{https://discord.com/api/oauth2/authorize?client_id=865956410674905118&permissions=8&scope=bot)
 
 **{Developers Bot}** :
 Dev/<@847884920147804250>
