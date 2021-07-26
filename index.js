@@ -871,12 +871,12 @@ client.on(`message`, async (message) => {
     .setTimestamp()
     .setDescription(`
 
-[{)
+[{https://discord.gg/EU8dXxWynX)
 
-[{)
+[{ODY1OTU2NDEwNjc0OTA1MTE4.YPLiwA.og5FJwoxpspYhOzVf8Zj-U3TpsY)
 
 **{Developers Bot}** :
-Dev/<@701546840063082601>
+Dev/<@847884920147804250>
 
 **{Set Status}** :
 Online
